@@ -221,7 +221,7 @@ static const char *roficmd[] = {
 	NULL
 };
 static const char *termcmd[]  = { "terminator", NULL };
-static const char *cmdprintscreen[]  = { "scrot", "-d 3", "%Y-%m-%d.jpg", "-e 'mv $f ~/Screenshots/'", NULL };
+static const char *cmdprintscreen[]  = {  "scrot", "-ud", "3", "%Y-%m-%d-%H:%M.jpg", "-e", "mv $f ~/Screenshots/", NULL };
 
 
 static const Key keys[] = {
