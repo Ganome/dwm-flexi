@@ -16,6 +16,7 @@
 #include "movestack.h"
 #include "pertag.h"
 #include "restartsig.h"
+#include "warp.h"
 /* Layouts */
 #include "layout_grid.h"
 #include "layout_monocle.h"

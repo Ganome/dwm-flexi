@@ -16,6 +16,7 @@
 #include "movestack.c"
 #include "pertag.c"
 #include "restartsig.c"
+#include "warp.c"
 /* Layouts */
 #include "layout_facts.c"
 #include "layout_grid.c"
