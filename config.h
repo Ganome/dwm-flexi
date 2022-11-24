@@ -81,7 +81,7 @@ static char *colors[][ColCount] = {
 
 static const char *const autostart[] = {
         "sh", "-c", "conky", NULL,
-        "sh", "-c", "/home/ganome/fixdisplay.sh", NULL,
+/*        "sh", "-c", "/home/ganome/fixdisplay.sh", NULL, */
         "nitrogen", "--restore", NULL,
         "sh", "-c", "picom", "-b", "--config ~/.config/picom.conf", NULL,
         "sh", "-c", "/home/ganome/.dwm/clock.sh", NULL,
@@ -96,7 +96,7 @@ static const char *const autostart[] = {
  *
  * Examples:
  *
- *  1) static char *tagicons[][NUMTAGS*2] = {
+ *  1) static char *tagicons[][NUMTAGS] = {
  *         [DEFAULT_TAGS] = { "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I" },
  *     }
  *
