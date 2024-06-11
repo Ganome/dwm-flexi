@@ -7,7 +7,7 @@ width_wintitle(Bar *bar, BarArg *a)
 int
 draw_wintitle(Bar *bar, BarArg *a)
 {
-	int x = a->x + lrpad / 2, w = a->w - lrpad / 2;
+	int x = a->x, w = a->w;
 	Monitor *m = bar->mon;
 	Client *c = m->sel;
 
@@ -29,10 +29,8 @@ draw_wintitle(Bar *bar, BarArg *a)
 	XSetForeground(drw->dpy, drw->gc, drw->scheme[ColBg].pixel);
 	XFillRectangle(drw->dpy, drw->drawable, drw->gc, x, a->y, w, a->h);
 
-
 	tx += tpad;
 	tw -= lrpad;
-
 
 	drw_text(drw, tx, a->y, tw, a->h, 0, c->name, 0, False);
 
